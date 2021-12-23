@@ -37,8 +37,9 @@
      <section class="slogan">
         <div class="container"> 
         <h1 class="slogan-site">эффективные решения для вашего бизнеса</h1>
-        <button class="button">Заказать услугу</button>
+        <button data-modal-open class="button">Заказать услугу</button>
         </div>
+       
      </section>  
     
     <!--main-about-->
@@ -71,18 +72,22 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="services-list">
             <li class="services-item">
-                <div class="services-images"><img src="./images/photo1.jpg" alt="клавиатура" width="370"></div>
-                <div class="sevice-products"><h3 class="sevice-product">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3></div>
+                <div class="services-images">
+                <img src="./images/photo1.jpg" alt="клавиатура" width="370">
+                <div class="sevice-products"><h3 class="sevice-product-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3></div>
+                </div>
             </li>
             <li class="services-item">
-                <div class="services-images"><img src="./images/photo2.jpg" alt="смартфон" width="370"></div>
-                <div class="sevice-products"> <h3 class="sevice-product">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3></div>
-
+                <div class="services-images">
+                <img src="./images/photo2.jpg" alt="смартфон" width="370">
+                <div class="sevice-products"> <h3 class="sevice-product-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3></div>
+                </div>
             </li>
             <li class="services-item">
-                <div class="services-images"> <img src="./images/photo3.jpg" alt="планшет" width="370"></div>
-                <div class="sevice-products"> <h3 class="sevice-product">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3></div>
-
+                <div class="services-images">
+                 <img src="./images/photo3.jpg" alt="планшет" width="370">
+                <div class="sevice-products"> <h3 class="sevice-product-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3></div>
+                </div> 
             </li>
         </ul>
         </div>
@@ -340,8 +345,12 @@
       </div>
     </div>
     </footer>
+    <!--MODAL-->
+<div class="backdrop">
+    <div class="modal"></div>
+</div>
 
-
+<script src="./js/modal.js"></script>
     
 </body>
 </html>
