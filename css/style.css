@@ -153,6 +153,9 @@ img {
   display: flex;
   align-items: center;
   fill: var(--color-text);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-header-mail:hover,
 .contact-header-mail:focus,
@@ -391,9 +394,13 @@ button.button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
   justify-content: center;
   align-items: center;
   fill: var(--color-icon);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-net:hover,
 .social-net:focus {
@@ -438,6 +445,9 @@ button.button {
   justify-content: center;
   align-items: center;
   fill: var(--color-icon);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-logo:hover,
 .icon-logo:focus {
@@ -491,6 +501,9 @@ button.button {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -583,6 +596,8 @@ button.button {
 .projects-icon {
   display: block;
   text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-icon:hover,
 .projects-icon:focus {
@@ -695,6 +710,9 @@ button.button {
   border-radius: 50%;
   align-items: center;
   fill: var(--back-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-net-footer:hover,
 .social-net-footer:focus {
@@ -714,7 +732,10 @@ button.button {
 
   background-color: rgba(0, 0, 0, 0.2);
 }
-
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .modal {
   position: absolute;
   top: 50%;
