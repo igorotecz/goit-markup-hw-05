@@ -81,7 +81,9 @@ img {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  color: #212121;
+  color: var(--color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web {
   color: #2196f3;
@@ -103,6 +105,8 @@ img {
   display: block;
   color: var(--color);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accent {
@@ -154,8 +158,8 @@ img {
   align-items: center;
   fill: var(--color-text);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-header-mail:hover,
 .contact-header-mail:focus,
@@ -399,8 +403,8 @@ button.button {
   align-items: center;
   fill: var(--color-icon);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-net:hover,
 .social-net:focus {
@@ -423,19 +427,11 @@ button.button {
 .client-icon {
   width: 170px;
   height: 92px;
-  /*border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex;
-  align-items: flex-end;
-  margin-right: 30px;*/
 }
 .client-icon:not(last-child) {
   margin-right: 30px;
 }
-/*.client-icon:hover {
-  border-color: var(--second-color);
-}*/
+
 .icon-logo {
   width: 100%;
   height: 100%;
@@ -446,8 +442,8 @@ button.button {
   align-items: center;
   fill: var(--color-icon);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-logo:hover,
 .icon-logo:focus {
@@ -502,13 +498,16 @@ button.button {
   letter-spacing: 0.03em;
   border-radius: 4px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
   color: var(--back-color);
   background-color: var(--second-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-primery,
 .button-secondary {
@@ -711,7 +710,6 @@ button.button {
   align-items: center;
   fill: var(--back-color);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-net-footer:hover,
@@ -735,6 +733,10 @@ button.button {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
